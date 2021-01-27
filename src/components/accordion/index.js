@@ -4,7 +4,7 @@ import {Container, Title, Item, Header, Body, Inner} from './styles/accordion';
 
 const ToggleContext = createContext();
 
-export const Accordion = ({children, ...restProps}) => {
+ const Accordion = ({children, ...restProps}) => {
     return (
         <Container {...restProps}>
             <Inner>{children}</Inner>
@@ -33,3 +33,5 @@ Accordion.Body = function AccordionBody({children, ...restProps}) {
     const {toggleShow} = useContext(ToggleContext);
      return toggleShow ? <Body {...restProps}>{children}</Body> : null;
 }
+
+export default Accordion;

@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '../components/footer';
+import {Footer} from '../components';
 
 
-export function FooterContainer (){
+const FooterContainer  = () => {
     return (
        <Footer>
            <Footer.Title>Questions?</Footer.Title>
@@ -39,3 +39,5 @@ export function FooterContainer (){
        </Footer>
     )
 }
+
+export default FooterContainer;

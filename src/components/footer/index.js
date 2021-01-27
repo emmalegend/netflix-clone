@@ -33,4 +33,4 @@ Footer.Break = function FooterBreak({ children, ...restProps}){
     return <Break {...restProps}>{children}</Break>
 }
 
-export default Footer
+export default Footer;
