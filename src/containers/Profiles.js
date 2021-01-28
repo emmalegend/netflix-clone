@@ -3,7 +3,7 @@ import { Header, Profiles } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
-export function SelectProfileContainer({ user, setProfile }) {
+const SelectProfileContainer =  ({ user, setProfile }) => {
   return (
     <>
       <Header bg={false}>
@@ -27,3 +27,5 @@ export function SelectProfileContainer({ user, setProfile }) {
     </>
   );
 }
+
+export default SelectProfileContainer;

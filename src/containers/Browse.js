@@ -4,10 +4,10 @@ import { Card, Header, Loading, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 import { FirebaseContext } from '../context/firebase';
-import { SelectProfileContainer } from './profiles';
-import { FooterContainer } from './footer';
+import { SelectProfileContainer } from './index';
+import { FooterContainer } from './index';
 
-export function BrowseContainer({ slides }) {
+const BrowseContainer = ({ slides }) => {
   const [category, setCategory] = useState('series');
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
@@ -111,3 +111,4 @@ export function BrowseContainer({ slides }) {
     <SelectProfileContainer user={user} setProfile={setProfile} />
   );
 }
+export default BrowseContainer;
